@@ -2,8 +2,8 @@
 Contributors: epipe-com
 Tags: favicon
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 1.0
+Tested up to: 3.9.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,10 +71,18 @@ to understand [Wikipedia article on favicon][wfavicon].
 
 == Changelog ==
 
+= 1.1 =
+* Use get_site_url() instead of get_home_url() to get the real site root.
+
 = 1.0 =
 * Initial version.
 
 == Upgrade Notice ==
+
+= 1.1 =
+Change to use get_site_url() instead of get_home_url() to get the real site
+root. This makes the plugin work when WP is installed in subdirectory.
+Thanks Patrick!
 
 = 1.0 =
 Initial version.
